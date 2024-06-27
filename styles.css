@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #4caf50;
+  background-color: #8152a9;
   color: white;
   padding: 1em 0;
   text-align: center;
@@ -30,7 +30,6 @@ main {
 #sheet-container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 
 .row {
@@ -38,26 +37,8 @@ main {
   height: 3em;
   border: 1px solid transparent;
   background-image: url("lines.png");
-  background-size: 14em;
+  background-size: 11em;
 }
-
-/* .row::before,
-.row::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #000;
-}
-
-.row::before {
-  top: 1.2em;
-}
-
-.row::after {
-  top: 2.4em;
-} */
 
 .line {
   position: absolute;
@@ -89,4 +70,10 @@ input[type="text"] {
   z-index: 1;
   line-height: 1.5em;
   padding-left: 0.2em;
+}
+
+* {
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
+  color-adjust: exact !important; /* Firefox 48 – 96 */
+  print-color-adjust: exact !important; /* Firefox 97+, Safari 15.4+ */
 }
